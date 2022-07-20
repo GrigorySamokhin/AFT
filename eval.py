@@ -41,7 +41,7 @@ if __name__ == '__main__':
     batch_size = 64
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    set_name = 'test_selfie'
+    set_name = 'test_selfie_wo_seg'
 
     input_size = 256
     data_transforms = {

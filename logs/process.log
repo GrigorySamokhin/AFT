@@ -7826,3 +7826,898 @@ Environment statistics:
 model: rn, use_head: False, freeze_n: 0
 train epoch 0/18
 ----------
+train loss: 0.7589, acc: 0.6580
+val loss: 0.5249, acc: 0.7913
+model: rn, use_head: False, freeze_n: 0
+debug: save weights.
+train epoch 1/18
+----------
+train loss: 0.6217, acc: 0.7337
+val loss: 0.5070, acc: 0.8193
+model: rn, use_head: False, freeze_n: 0
+debug: save weights.
+train epoch 2/18
+----------
+train loss: 0.5793, acc: 0.7529
+val loss: 0.5770, acc: 0.7871
+train epoch 3/18
+----------
+train loss: 0.5491, acc: 0.7681
+val loss: 0.5039, acc: 0.8137
+train epoch 4/18
+----------
+train loss: 0.5238, acc: 0.7846
+val loss: 0.4845, acc: 0.8207
+model: rn, use_head: False, freeze_n: 0
+debug: save weights.
+train epoch 5/18
+----------
+train loss: 0.4946, acc: 0.7907
+val loss: 0.4953, acc: 0.8305
+model: rn, use_head: False, freeze_n: 0
+debug: save weights.
+train epoch 6/18
+----------
+train loss: 0.4845, acc: 0.7958
+val loss: 0.5037, acc: 0.8249
+train epoch 7/18
+----------
+train loss: 0.4556, acc: 0.8148
+val loss: 0.5220, acc: 0.8109
+train epoch 8/18
+----------
+train loss: 0.4385, acc: 0.8161
+val loss: 0.5060, acc: 0.8193
+train epoch 9/18
+----------
+train loss: 0.4281, acc: 0.8229
+val loss: 0.5087, acc: 0.8249
+train epoch 10/18
+----------
+train loss: 0.4277, acc: 0.8240
+val loss: 0.5169, acc: 0.8319
+model: rn, use_head: False, freeze_n: 0
+debug: save weights.
+train epoch 11/18
+----------
+train loss: 0.3976, acc: 0.8348
+val loss: 0.5849, acc: 0.8081
+train epoch 12/18
+----------
+train loss: 0.3895, acc: 0.8400
+val loss: 0.6914, acc: 0.7885
+train epoch 13/18
+----------
+train loss: 0.3714, acc: 0.8465
+val loss: 0.5686, acc: 0.8277
+train epoch 14/18
+----------
+train loss: 0.3560, acc: 0.8550
+val loss: 0.6535, acc: 0.7871
+train epoch 15/18
+----------
+train loss: 0.3532, acc: 0.8557
+val loss: 0.6067, acc: 0.8193
+train epoch 16/18
+----------
+train loss: 0.3384, acc: 0.8605
+val loss: 0.5573, acc: 0.8389
+model: rn, use_head: False, freeze_n: 0
+debug: save weights.
+train epoch 17/18
+----------
+train loss: 0.3204, acc: 0.8684
+val loss: 0.5913, acc: 0.8165
+train epoch 18/18
+----------
+train loss: 0.3078, acc: 0.8735
+val loss: 0.6204, acc: 0.8207
+training complete in 17m 46s
+best validation accuracy: 0.838936
+
+test epoch 0/0
+----------
+test evaluation accuracy: 0.8208955223880596
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: False, freeze_n: 0
+test_selfie epoch 0/0
+----------
+test_selfie evaluation accuracy: 0.8765432098765431
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: False, freeze_n: 0
+test_selfie epoch 0/0
+----------
+test_selfie evaluation accuracy: 0.8765432098765431
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: False, freeze_n: 0
+test epoch 0/0
+----------
+test evaluation accuracy: 0.8276797829036634
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval_comparison.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: False, freeze_n: 0
+test epoch 0/0
+----------
+test evaluation accuracy: 0.6241519674355495
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: False, freeze_n: 0
+test_selfie_wo_seg epoch 0/0
+----------
+test_selfie_wo_seg evaluation accuracy: 0.8888888888888888
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: False, freeze_n: 0
+test_selfie_wo_seg epoch 0/0
+----------
+test_selfie_wo_seg evaluation accuracy: 0.8888888888888888
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: False, freeze_n: 0
+test_selfie_wo_seg epoch 0/0
+----------
+test_selfie_wo_seg evaluation accuracy: 0.8888888888888888
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: True, freeze_n: 0
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/train.py
+Script arguments:
+{
+    "batch_size": 64,
+    "input_dataset": "data/hairstyle_dataset",
+    "input_size": 256,
+    "learning_rate": 0.0005,
+    "log": "process.log",
+    "momentum": 0.9,
+    "num_epoch": 19,
+    "scheduler_step_gamma": 0.1,
+    "scheduler_step_size": 7,
+    "use_scheduler_step": false,
+    "weight_classes": true,
+    "weight_decay": 0.001
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: True, freeze_n: 0
+train epoch 0/18
+----------
+train loss: 0.9769, acc: 0.5370
+val loss: 0.7782, acc: 0.6611
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 1/18
+----------
+train loss: 0.7367, acc: 0.6740
+val loss: 0.6707, acc: 0.7227
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 2/18
+----------
+train loss: 0.6655, acc: 0.7089
+val loss: 0.5246, acc: 0.8025
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 3/18
+----------
+train loss: 0.6185, acc: 0.7346
+val loss: 0.4963, acc: 0.8095
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 4/18
+----------
+train loss: 0.6025, acc: 0.7435
+val loss: 0.4771, acc: 0.8249
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 5/18
+----------
+train loss: 0.5782, acc: 0.7553
+val loss: 0.4786, acc: 0.8235
+train epoch 6/18
+----------
+train loss: 0.5543, acc: 0.7652
+val loss: 0.4508, acc: 0.8361
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 7/18
+----------
+train loss: 0.5434, acc: 0.7698
+val loss: 0.4733, acc: 0.8263
+train epoch 8/18
+----------
+train loss: 0.5251, acc: 0.7815
+val loss: 0.5141, acc: 0.8221
+train epoch 9/18
+----------
+train loss: 0.5192, acc: 0.7864
+val loss: 0.4784, acc: 0.8361
+train epoch 10/18
+----------
+train loss: 0.5069, acc: 0.7889
+val loss: 0.4832, acc: 0.8347
+train epoch 11/18
+----------
+train loss: 0.5113, acc: 0.7897
+val loss: 0.5041, acc: 0.8291
+train epoch 12/18
+----------
+train loss: 0.4900, acc: 0.7929
+val loss: 0.4811, acc: 0.8375
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 13/18
+----------
+train loss: 0.4771, acc: 0.8057
+val loss: 0.4928, acc: 0.8277
+train epoch 14/18
+----------
+train loss: 0.4663, acc: 0.8024
+val loss: 0.4637, acc: 0.8417
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 15/18
+----------
+train loss: 0.4578, acc: 0.8103
+val loss: 0.4844, acc: 0.8277
+train epoch 16/18
+----------
+train loss: 0.4525, acc: 0.8126
+val loss: 0.4859, acc: 0.8277
+train epoch 17/18
+----------
+train loss: 0.4400, acc: 0.8191
+val loss: 0.4538, acc: 0.8361
+train epoch 18/18
+----------
+train loss: 0.4327, acc: 0.8182
+val loss: 0.5019, acc: 0.8333
+training complete in 23m 17s
+best validation accuracy: 0.841737
+
+test epoch 0/0
+----------
+test evaluation accuracy: 0.8290366350067842
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: True, freeze_n: 0
+test_selfie_wo_seg epoch 0/0
+----------
+test_selfie_wo_seg evaluation accuracy: 0.9753086419753085
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/train.py
+Script arguments:
+{
+    "batch_size": 64,
+    "input_dataset": "data/hairstyle_dataset",
+    "input_size": 256,
+    "learning_rate": 0.0005,
+    "log": "process.log",
+    "momentum": 0.9,
+    "num_epoch": 100,
+    "scheduler_step_gamma": 0.1,
+    "scheduler_step_size": 7,
+    "use_scheduler_step": false,
+    "weight_classes": true,
+    "weight_decay": 0.001
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: True, freeze_n: 0
+train epoch 0/99
+----------
+train loss: 0.9769, acc: 0.5370
+val loss: 0.7777, acc: 0.6611
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 1/99
+----------
+train loss: 0.7365, acc: 0.6749
+val loss: 0.6759, acc: 0.7115
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 2/99
+----------
+train loss: 0.6657, acc: 0.7078
+val loss: 0.5270, acc: 0.7955
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 3/99
+----------
+train loss: 0.6187, acc: 0.7368
+val loss: 0.5016, acc: 0.8109
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 4/99
+----------
+train loss: 0.6028, acc: 0.7442
+val loss: 0.4803, acc: 0.8277
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 5/99
+----------
+train loss: 0.5789, acc: 0.7555
+val loss: 0.4906, acc: 0.8193
+train epoch 6/99
+----------
+train loss: 0.5552, acc: 0.7643
+val loss: 0.4541, acc: 0.8389
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 7/99
+----------
+train loss: 0.5450, acc: 0.7711
+val loss: 0.4631, acc: 0.8319
+train epoch 8/99
+----------
+train loss: 0.5246, acc: 0.7818
+val loss: 0.5089, acc: 0.8207
+train epoch 9/99
+----------
+train loss: 0.5195, acc: 0.7853
+val loss: 0.4802, acc: 0.8305
+train epoch 10/99
+----------
+train loss: 0.5072, acc: 0.7897
+val loss: 0.4874, acc: 0.8347
+train epoch 11/99
+----------
+train loss: 0.5093, acc: 0.7893
+val loss: 0.4859, acc: 0.8291
+train epoch 12/99
+----------
+train loss: 0.4915, acc: 0.7953
+val loss: 0.4867, acc: 0.8305
+train epoch 13/99
+----------
+train loss: 0.4742, acc: 0.8062
+val loss: 0.5267, acc: 0.8207
+train epoch 14/99
+----------
+train loss: 0.4742, acc: 0.8010
+val loss: 0.4711, acc: 0.8459
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 15/99
+----------
+train loss: 0.4490, acc: 0.8184
+val loss: 0.4625, acc: 0.8319
+train epoch 16/99
+----------
+train loss: 0.4366, acc: 0.8200
+val loss: 0.5187, acc: 0.8305
+train epoch 17/99
+----------
+train loss: 0.4293, acc: 0.8217
+val loss: 0.5680, acc: 0.8207
+train epoch 18/99
+----------
+train loss: 0.4150, acc: 0.8277
+val loss: 0.5463, acc: 0.8249
+train epoch 19/99
+----------
+train loss: 0.4164, acc: 0.8215
+val loss: 0.5065, acc: 0.8305
+train epoch 20/99
+----------
+train loss: 0.4022, acc: 0.8313
+val loss: 0.6275, acc: 0.7983
+train epoch 21/99
+----------
+train loss: 0.3931, acc: 0.8356
+val loss: 0.5751, acc: 0.8193
+train epoch 22/99
+----------
+train loss: 0.3821, acc: 0.8446
+val loss: 0.5421, acc: 0.8333
+train epoch 23/99
+----------
+train loss: 0.3719, acc: 0.8492
+val loss: 0.6136, acc: 0.8053
+train epoch 24/99
+----------
+train loss: 0.3636, acc: 0.8507
+val loss: 0.5867, acc: 0.8095
+train epoch 25/99
+----------
+train loss: 0.3644, acc: 0.8479
+val loss: 0.5876, acc: 0.8137
+train epoch 26/99
+----------
+train loss: 0.3505, acc: 0.8546
+val loss: 0.5622, acc: 0.8249
+train epoch 27/99
+----------
+train loss: 0.3353, acc: 0.8624
+val loss: 0.6371, acc: 0.8039
+train epoch 28/99
+----------
+train loss: 0.3293, acc: 0.8632
+val loss: 0.5775, acc: 0.8235
+train epoch 29/99
+----------
+train loss: 0.3412, acc: 0.8567
+val loss: 0.6957, acc: 0.7927
+train epoch 30/99
+----------
+train loss: 0.3204, acc: 0.8651
+val loss: 0.6172, acc: 0.8067
+train epoch 31/99
+----------
+train loss: 0.3096, acc: 0.8706
+val loss: 0.6425, acc: 0.8123
+train epoch 32/99
+----------
+train loss: 0.3036, acc: 0.8752
+val loss: 0.5751, acc: 0.8403
+train epoch 33/99
+----------
+train loss: 0.2917, acc: 0.8814
+val loss: 0.6279, acc: 0.8249
+train epoch 34/99
+----------
+train loss: 0.2858, acc: 0.8812
+val loss: 0.6942, acc: 0.8235
+train epoch 35/99
+----------
+train loss: 0.2761, acc: 0.8869
+val loss: 0.6413, acc: 0.8207
+train epoch 36/99
+----------
+train loss: 0.2772, acc: 0.8853
+val loss: 0.7251, acc: 0.7815
+train epoch 37/99
+----------
+--------------------------------
+Script command line:
+eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: True, freeze_n: 0
+train loss: 0.2668, acc: 0.8911
+val loss: 0.7706, acc: 0.8039
+train epoch 38/99
+----------
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/train.py
+Script arguments:
+{
+    "batch_size": 64,
+    "input_dataset": "data/hairstyle_dataset",
+    "input_size": 256,
+    "learning_rate": 0.0005,
+    "log": "process.log",
+    "momentum": 0.9,
+    "num_epoch": 100,
+    "scheduler_step_gamma": 0.1,
+    "scheduler_step_size": 7,
+    "use_scheduler_step": true,
+    "weight_classes": true,
+    "weight_decay": 0.001
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: True, freeze_n: 0
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/eval.py
+Script arguments:
+{
+    "config_path": "config.ini",
+    "log": "process.log"
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: True, freeze_n: 0
+test_selfie_wo_seg epoch 0/0
+----------
+test_selfie_wo_seg evaluation accuracy: 0.9753086419753085
+--------------------------------
+Script command line:
+/media/main/New Volume1/Projects_/fine_tuning/AFT/train.py
+Script arguments:
+{
+    "batch_size": 64,
+    "input_dataset": "data/hairstyle_dataset",
+    "input_size": 256,
+    "learning_rate": 0.0005,
+    "log": "process.log",
+    "momentum": 0.9,
+    "num_epoch": 100,
+    "scheduler_step_gamma": 0.1,
+    "scheduler_step_size": 7,
+    "use_scheduler_step": true,
+    "weight_classes": true,
+    "weight_decay": 0.001
+}
+Environment statistics:
+{
+    "platform": {
+        "system": "Linux",
+        "release": "5.4.0-122-generic",
+        "version": "#138-Ubuntu SMP Wed Jun 22 15:00:31 UTC 2022",
+        "machine": "x86_64",
+        "processor": "x86_64",
+        "libc_ver": [
+            "glibc",
+            "2.31"
+        ],
+        "python_version": "3.9.12",
+        "python_implementation": "CPython",
+        "python_compiler": "GCC 7.5.0"
+    },
+    "cwd": "/media/main/New Volume1/Projects_/fine_tuning/AFT",
+    "sys_python_version": "3.9.12",
+    "git_commit": "commit fc2217e05fd21ce9e0fa003ef30b6b8f91fbc60f\nAuthor: Grigory <samoh132@gmail.com>\nDate:   Wed Jul 20 13:34:37 2022 +0300\n\n    ref | refactorinh",
+    "ffmpeg": "ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers"
+}
+model: rn, use_head: True, freeze_n: 0
+train epoch 0/99
+----------
+train loss: 0.9768, acc: 0.5365
+val loss: 0.7806, acc: 0.6611
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 1/99
+----------
+train loss: 0.7365, acc: 0.6749
+val loss: 0.6658, acc: 0.7213
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 2/99
+----------
+train loss: 0.6655, acc: 0.7094
+val loss: 0.5248, acc: 0.7983
+model: rn, use_head: True, freeze_n: 0
+debug: save weights.
+train epoch 3/99
+----------

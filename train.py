@@ -36,22 +36,22 @@ def parse_args():
     # Train
     parser.add_argument('-bs', '--batch_size', type=int, required=False, default=64,
                         help="Batch size for training networks")
-    parser.add_argument('-is', '--input_size', type=int, required=False, default=224,
+    parser.add_argument('-is', '--input_size', type=int, required=False, default=256,
                         help="Input image size")
-    parser.add_argument('-nm', '--num_epoch', type=int, required=False, default=19,
+    parser.add_argument('-nm', '--num_epoch', type=int, required=False, default=100,
                         help="Number of epochs")
     # Data
     parser.add_argument('-wc', '--weight_classes', type=bool, required=False, default=True,
                         help="Enable use weights for unbalanced data")
     # Optimizer
-    parser.add_argument('-lr', '--learning_rate', type=float, required=False, default=0.001,
+    parser.add_argument('-lr', '--learning_rate', type=float, required=False, default=0.0005,
                         help="Learning rate")
     parser.add_argument('-lr_m', '--momentum', type=float, required=False, default=0.9,
                         help="Learning rate momentum")
     parser.add_argument('-wd', '--weight_decay', type=float, required=False, default=1e-3,
                         help="Weight decay")
     # Schedulers
-    parser.add_argument('-uss', '--use_scheduler_step', type=bool, required=False, default=False,
+    parser.add_argument('-uss', '--use_scheduler_step', type=bool, required=False, default=True,
                         help="Enable use sampler step_lr")
     parser.add_argument('-uss_ss', '--scheduler_step_size', type=int, required=False, default=7,
                         help="StepLR sampler step size")

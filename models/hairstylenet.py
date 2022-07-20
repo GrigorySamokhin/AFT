@@ -15,7 +15,7 @@ class FaceNet(torch.nn.Module):
             self,
             num_of_output_nodes: int = 2,
             model='rn',
-            use_head=False,
+            use_head=True,
             freeze_n_block=0
     ):
         """
