@@ -6,17 +6,21 @@ import os
 import torch
 import torchvision
 
-from modules.model.training import eval_model
-from modules.model.network import FaceNet
+from utils.logger import initialize_logging
+from utils.training import eval_model
+from models.hairstylenet import FaceNet
 
 
-def parse_arguments():
+def parse_args():
     """Parses arguments for CLI"""
 
     parser = argparse.ArgumentParser(description=f'Starts training script')
 
     parser.add_argument('--config-path', default='config.ini', type=str,
                         help='Path to config file')
+    # Log
+    parser.add_argument("--log", type=str, default="process.log",
+                        help="file name for processing log (relative to the root)")
 
     args = parser.parse_args()
 
@@ -25,35 +29,46 @@ def parse_arguments():
 
 if __name__ == '__main__':
 
+    args = parse_args()
+
+    initialize_logging(
+        logging_dir_path='./logs',
+        logging_file_name=args.log,
+        main_script_path=__file__,
+        script_args=args,
+        check_ffmpeg=True)
+
     batch_size = 64
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+    set_name = 'test_selfie'
+
     input_size = 256
     data_transforms = {
-        'test': torchvision.transforms.Compose([
+        set_name: torchvision.transforms.Compose([
             torchvision.transforms.Resize(input_size),
             torchvision.transforms.ToTensor(),
             torchvision.transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ]),
     }
 
-    data_dir = '/media/main/New Volume/Projects_/digital_human/f3d_recon_pipeline/tests/GT_hairstyles'
+    data_dir = 'data/hairstyle_dataset'
     image_datasets = {
         x: torchvision.datasets.ImageFolder(
             os.path.join(data_dir, x),
             data_transforms[x]
-        ) for x in ['test']
+        ) for x in [set_name]
     }
 
     dataloaders_dict = {
-        'test':
-            torch.utils.data.DataLoader(image_datasets['test'],
+        set_name:
+            torch.utils.data.DataLoader(image_datasets[set_name],
                                         batch_size=32,
                                         shuffle=False,
                                         num_workers=4)  # for Kaggle
     }
 
-    model = FaceNet(num_of_output_nodes=len(image_datasets['test'].classes))
+    model = FaceNet(num_of_output_nodes=len(image_datasets[set_name].classes))
 
     load_torch = torch.load('weights/best_val_acc_weights.h5')
     load_torch_new = load_torch.copy()
@@ -80,7 +95,8 @@ if __name__ == '__main__':
         dataloaders=dataloaders_dict,
         criterion=loss_func,
         device=device,
-        num_epochs=1
+        num_epochs=1,
+        set_name=set_name
     )
 
 

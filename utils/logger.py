@@ -8,6 +8,7 @@ import os
 import sys
 import logging
 import argparse
+import coloredlogs
 from typing import Tuple, Optional
 from .string import split_str, pretty_print_dict_to_str
 from .envs import get_env_stats
@@ -84,6 +85,7 @@ def initialize_logging(logging_dir_path: Optional[str] = None,
     bool
         Whether the logging file already exists.
     """
+    coloredlogs.install()
     logger, log_file_exist = prepare_logger(
         logging_dir_path=logging_dir_path,
         logging_file_name=logging_file_name)

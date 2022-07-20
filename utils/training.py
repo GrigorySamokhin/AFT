@@ -1,5 +1,6 @@
 """Module with network training"""
-
+import logging
+import os.path
 import sys
 from datetime import datetime
 from typing import List, Dict, Optional
@@ -36,8 +37,8 @@ def train_model(model,
     best_acc = 0.0
 
     for epoch in range(num_epochs):
-        print('train epoch {}/{}'.format(epoch, num_epochs - 1))
-        print('-' * 10)
+        logging.info('train epoch {}/{}'.format(epoch, num_epochs - 1))
+        logging.info('-' * 10)
 
         # Each epoch has a training and validation phase
         for phase in ['train', 'val']:
@@ -86,7 +87,7 @@ def train_model(model,
             epoch_loss = running_loss / len(dataloaders[phase].dataset)
             epoch_acc = running_corrects.double() / len(dataloaders[phase].dataset)
 
-            print('{} loss: {:.4f}, acc: {:.4f}'.format(phase, epoch_loss, epoch_acc))
+            logging.info('{} loss: {:.4f}, acc: {:.4f}'.format(phase, epoch_loss, epoch_acc))
 
             # deep copy the model
             if phase == 'val' and epoch_acc > best_acc:
@@ -96,23 +97,24 @@ def train_model(model,
                     num_of_output_nodes=output_nodes,
                 )
                 model_save.load_state_dict(best_model_wts)
+                if not os.path.exists('weights'):
+                    os.mkdir('weights')
                 torch.save(model.state_dict(), 'weights/best_val_acc_weights.h5')
-                print('debug: save weights.')
+                logging.info('debug: save weights.')
             if phase == 'val':
                 val_acc_history.append(epoch_acc)
 
-        print()
 
     time_elapsed = time.time() - since
-    print('training complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60))
-    print('best validation accuracy: {:4f}\n'.format(best_acc))
+    logging.info('training complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60))
+    logging.info('best validation accuracy: {:4f}\n'.format(best_acc))
 
     # load best model weights
     model.load_state_dict(best_model_wts)
     return model, val_acc_history
 
 
-def eval_model(model, dataloaders, criterion, num_epochs=25, device='cpu'):
+def eval_model(model, dataloaders, criterion, num_epochs=25, device='cpu', set_name='test'):
     since = time.time()
 
     model.to(device)
@@ -120,10 +122,10 @@ def eval_model(model, dataloaders, criterion, num_epochs=25, device='cpu'):
 
     running_corrects = 0
     for epoch in range(num_epochs):
-        print('eval epoch {}/{}'.format(epoch, num_epochs - 1))
-        print('-' * 10)
+        logging.info('{} epoch {}/{}'.format(set_name, epoch, num_epochs - 1))
+        logging.info('-' * 10)
 
-        for inputs, labels in dataloaders['test']:
+        for inputs, labels in dataloaders[set_name]:
 
             inputs = inputs.to(device)
             labels = labels.to(device)
@@ -135,8 +137,8 @@ def eval_model(model, dataloaders, criterion, num_epochs=25, device='cpu'):
 
             running_corrects += torch.sum(preds == labels.data)
 
-    epoch_acc = running_corrects.double() / len(dataloaders['test'].dataset)
+    epoch_acc = running_corrects.double() / len(dataloaders[set_name].dataset)
 
-    print('test evaluation accuracy: {0}'.format(epoch_acc))
+    logging.info('{} evaluation accuracy: {}'.format(set_name, epoch_acc))
 
 
